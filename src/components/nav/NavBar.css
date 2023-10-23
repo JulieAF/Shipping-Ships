@@ -1,0 +1,26 @@
+.navbar {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  width: 100%;
+  padding: 0.5rem;
+  position: fixed;
+  top: 0;
+}
+
+.navbar-item {
+  flex-basis: 30%;
+  list-style-type: none;
+  text-align: center;
+  color: white;
+}
+
+.navbar-link {
+  text-decoration: none;
+  font-family: "Quicksand", sans-serif;
+  letter-spacing: 1px;
+}
+
+.navbar-link:hover {
+  color: rgb(158, 100, 215);
+}
