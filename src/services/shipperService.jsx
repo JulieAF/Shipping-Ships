@@ -15,3 +15,31 @@ export const getHaulersByShips = () => {
     res.json()
   );
 };
+
+export const deleteShip = (ship) => {
+  return fetch(`http://localhost:8000/ships/${ship.id}`, {
+    method: "DELETE",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(ship),
+  }).then(() => {
+    console.log("Deleted!");
+  });
+};
+
+export const getHaulerById = (haulerId) => {
+  return fetch(
+    `http://localhost:8000/haulers?id=${haulerId}&_expand=dock`
+  ).then((res) => res.json());
+};
+
+export const editedHauler = (hauler) => {
+  return fetch(`http://localhost:8000/haulers/${hauler.id}`, {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(hauler),
+  });
+};
