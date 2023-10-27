@@ -11,12 +11,12 @@ export const NavBar = () => {
       </li>
       <li className="navbar-item">
         <Link className="navbar-link" to="/shippingships">
-          Ships
+          Shipping Ships
         </Link>
       </li>
       <li className="navbar-item">
         <Link className="navbar-link" to="/haulingships">
-          Haulers
+          Hauling Ships
         </Link>
       </li>
       <li className="navbar-item">
