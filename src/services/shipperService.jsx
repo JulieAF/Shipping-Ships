@@ -43,3 +43,9 @@ export const editedHauler = (hauler) => {
     body: JSON.stringify(hauler),
   });
 };
+
+export const getHaulerByDock = () => {
+  return fetch(`http://localhost:8000/docks?_embed=haulers`).then((res) =>
+    res.json()
+  );
+};
